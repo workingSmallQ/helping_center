@@ -1,7 +1,7 @@
 const CONFIG = {
   GITBOOK_INDEX_PAGE: 'about', // 文档首页显示的文章，请确此路径包含在您的notion数据库中
 
-  GITBOOK_AUTO_SORT: process.env.NEXT_PUBLIC_GITBOOK_AUTO_SORT || true, // 是否自动按分类名 归组排序文章；自动归组可能会打乱您Notion中的文章顺序
+  GITBOOK_AUTO_SORT: process.env.NEXT_PUBLIC_GITBOOK_AUTO_SORT || false, // 是否自动按分类名 归组排序文章；自动归组可能会打乱您Notion中的文章顺序
 
   GITBOOK_LATEST_POST_RED_BADGE:
     process.env.NEXT_PUBLIC_GITBOOK_LATEST_POST_RED_BADGE || true, // 是否给最新文章显示红点
@@ -19,7 +19,7 @@ const CONFIG = {
 
   // Widget
   GITBOOK_WIDGET_REVOLVER_MAPS:
-    process.env.NEXT_PUBLIC_WIDGET_REVOLVER_MAPS || 'false', // 地图插件
+    process.env.NEXT_PUBLIC_WIDGET_REVOLVER_MAPS || 'true', // 地图插件
   GITBOOK_WIDGET_TO_TOP: true // 跳回顶部
 }
 export default CONFIG
